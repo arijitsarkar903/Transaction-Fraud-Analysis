@@ -1,4 +1,4 @@
-# Transaction-Fraud-Analysis (Capstone Project)
+# Transaction Fraud Analysis (Capstone Project)
 
 # Overview
 

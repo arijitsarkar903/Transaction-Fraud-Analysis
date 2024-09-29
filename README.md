@@ -44,7 +44,7 @@ Dropped irrelevant columns and handled missing values.
 
 - _Distribution of Transaction Amounts:_ Visualized using a histogram, this provided insights into the spread of transaction values, highlighting the occurrence of high-value transactions.
 
--_ Fraudulent Transactions by Card Type:_ A count plot showed how different card types are linked to fraudulent transactions, revealing vulnerabilities related to specific card types.
+- _Fraudulent Transactions by Card Type:_ A count plot showed how different card types are linked to fraudulent transactions, revealing vulnerabilities related to specific card types.
 
 - _Customer Lifetime Value (CLV) Distribution:_ A histogram of CLV values helped analyze customer loyalty and spending power.
 

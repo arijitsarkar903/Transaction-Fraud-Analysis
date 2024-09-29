@@ -20,14 +20,14 @@ Each dataset was imported and merged into a single comprehensive DataFrame for a
 
 In the first phase, I utilized SQL to perform preliminary analysis and data extraction. Key queries included:
 
-_Indexing:_ Developed indexes on customer_id and merchant_id within the financial_data table to improve query performance.
-_Average Transaction Amount per Merchant:_ Calculated the average transaction value per merchant to identify high-value merchants.
-_Top Cities with the Highest CLV for Fraudulent Transactions:_ Identified the top cities with the highest average CLV for fraudulent transactions to focus fraud prevention measures.
-_Top Merchants with the Most Fraudulent Transactions:_ Listed the top 5 merchants with the highest count of fraudulent transactions to pinpoint vulnerable business segments.
-_Top 10 Customers by Total Transaction Amount:_ Highlighted the top 10 customers based on their total transaction amount to understand high-value customer behavior.
-_Categorizing Transactions by Amount:_ Segregated transactions into "Low", "Medium", and "High" value categories to provide better customer segmentation.
-_Transactions Related to Shopping or Retail:_ Identified customers who transacted with merchants from shopping or retail sectors, which are typically more prone to fraud.
-_Top Countries with the Most Fraudulent Transactions:_ Showed the countries where fraudulent transactions are most prevalent.
+- _Indexing:_ Developed indexes on customer_id and merchant_id within the financial_data table to improve query performance.
+- _Average Transaction Amount per Merchant:_ Calculated the average transaction value per merchant to identify high-value merchants.
+- _Top Cities with the Highest CLV for Fraudulent Transactions:_ Identified the top cities with the highest average CLV for fraudulent transactions to focus fraud prevention measures.
+- _Top Merchants with the Most Fraudulent Transactions:_ Listed the top 5 merchants with the highest count of fraudulent transactions to pinpoint vulnerable business segments.
+- _Top 10 Customers by Total Transaction Amount:_ Highlighted the top 10 customers based on their total transaction amount to understand high-value customer behavior.
+- _Categorizing Transactions by Amount:_ Segregated transactions into "Low", "Medium", and "High" value categories to provide better customer segmentation.
+- _Transactions Related to Shopping or Retail:_ Identified customers who transacted with merchants from shopping or retail sectors, which are typically more prone to fraud.
+- _Top Countries with the Most Fraudulent Transactions:_ Showed the countries where fraudulent transactions are most prevalent.
 
 # Python Analysis
 

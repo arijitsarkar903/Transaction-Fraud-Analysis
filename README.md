@@ -6,6 +6,8 @@ The Transaction Fraud Analysis Capstone Project focuses on identifying patterns 
 
 # Dataset Details
 
+_Main Dataset link:_ https://www.kaggle.com/datasets/isabbaggin/transaction-fraudulent-financial-syntheticdata
+
 The project involves multiple datasets covering different aspects of the financial transactions. These datasets are:
 
 - financial_data: Contains information about transaction amounts, CLV (Customer Lifetime Value), fraud indicators, and transaction frequency.

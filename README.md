@@ -33,7 +33,10 @@ The project follows a comprehensive workflow split into three main phases:
 **Data Normalization and SQL Processing:**
 
 - Initially, raw data was imported, and normalization procedures were implemented to organize the dataset into multiple smaller datasets, each representing different entities (e.g., customer details, merchant information, transaction details).
-- SQL was used to store and manage these datasets. Several queries were applied for data preprocessing, indexing, and basic analysis. Key tasks included:
+- SQL was used to store and manage these datasets. Several queries were applied for data preprocessing, indexing, and basic analysis.
+
+_Key tasks included:_
+
 - Creating indexes on customer_id and merchant_id for query optimization.
 - Identifying the top merchants with fraudulent transactions and categorizing transactions based on their value.
 - Exporting the clean, structured datasets to be used in the next phase.
@@ -51,7 +54,8 @@ _Key tasks included:_
 **Power BI Dashboard for Reporting:**
 
 - After data exploration, insights were transformed into an interactive dashboard using Power BI for comprehensive reporting. Power BI allowed for dynamic filtering and visualization, enabling users to explore fraud trends across regions, age groups, and transaction categories.
-- The dashboard included:
+
+The dashboard included:
 - Visuals such as bar charts, pie charts, and interactive maps to display the distribution of fraudulent transactions.
 - Filters based on city, card type, and merchant category to allow users to tailor their analysis dynamically.
 - A focus on highlighting high-risk customers, regions, and age groups prone to fraudulent activities.

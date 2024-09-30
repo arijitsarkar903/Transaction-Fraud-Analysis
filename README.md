@@ -1,6 +1,6 @@
 # Transaction Fraud Analysis (Capstone Project)
 
-#Overview
+# Overview
 
 The Transaction Fraud Analysis Capstone Project focuses on detecting and analyzing fraudulent transactions across merchants, customers, and locations. A structured methodology was applied, utilizing SQL for data extraction and normalization, Python for exploratory data analysis (EDA), and Power BI for dynamic visualization. The project aims to highlight fraudulent patterns, offering insights into customer behavior and high-risk areas.
 

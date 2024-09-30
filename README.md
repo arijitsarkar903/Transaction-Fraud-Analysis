@@ -1,8 +1,17 @@
 # Transaction Fraud Analysis (Capstone Project)
 
-# Overview
+#Overview
 
-The Transaction Fraud Analysis Capstone Project focuses on identifying patterns of fraudulent transactions across various merchants, customers, and locations. This end-to-end analysis uses SQL, Python, and Power BI for data extraction, cleaning, analysis, and visualization. The project aims to uncover actionable insights regarding fraud patterns by analyzing transaction data, customer lifetime value (CLV), card types, and location-based trends.
+The Transaction Fraud Analysis Capstone Project focuses on detecting and analyzing fraudulent transactions across merchants, customers, and locations. A structured methodology was applied, utilizing SQL for data extraction and normalization, Python for exploratory data analysis (EDA), and Power BI for dynamic visualization. The project aims to highlight fraudulent patterns, offering insights into customer behavior and high-risk areas.
+
+# Objectives
+
+The primary objectives of this project are:
+
+- To identify patterns of fraudulent transactions.
+- To normalize and organize raw data into structured datasets.
+- To analyze key variables such as transaction amount, CLV (Customer Lifetime Value), and fraud indicators.
+- To develop interactive dashboards for fraud detection and reporting.
 
 # Dataset Details
 
@@ -18,77 +27,35 @@ The project involves multiple datasets covering different aspects of the financi
 
 Each dataset was imported and merged into a single comprehensive DataFrame for analysis.
 
-# SQL Analysis
+# Methods
+The project follows a comprehensive workflow split into three main phases:
 
-In the first phase, I utilized SQL to perform preliminary analysis and data extraction. Key queries included:
+**Data Normalization and SQL Processing:**
 
-- _Indexing:_ Developed indexes on customer_id and merchant_id within the financial_data table to improve query performance.
-- _Average Transaction Amount per Merchant:_ Calculated the average transaction value per merchant to identify high-value merchants.
-- _Top Cities with the Highest CLV for Fraudulent Transactions:_ Identified the top cities with the highest average CLV for fraudulent transactions to focus fraud prevention measures.
-- _Top Merchants with the Most Fraudulent Transactions:_ Listed the top 5 merchants with the highest count of fraudulent transactions to pinpoint vulnerable business segments.
-- _Top 10 Customers by Total Transaction Amount:_ Highlighted the top 10 customers based on their total transaction amount to understand high-value customer behavior.
-- _Categorizing Transactions by Amount:_ Segregated transactions into "Low", "Medium", and "High" value categories to provide better customer segmentation.
-- _Transactions Related to Shopping or Retail:_ Identified customers who transacted with merchants from shopping or retail sectors, which are typically more prone to fraud.
-- _Top Countries with the Most Fraudulent Transactions:_ Showed the countries where fraudulent transactions are most prevalent.
+- Initially, raw data was imported, and normalization procedures were implemented to organize the dataset into multiple smaller datasets, each representing different entities (e.g., customer details, merchant information, transaction details).
+- SQL was used to store and manage these datasets. Several queries were applied for data preprocessing, indexing, and basic analysis. Key tasks included:
+- Creating indexes on customer_id and merchant_id for query optimization.
+- Identifying the top merchants with fraudulent transactions and categorizing transactions based on their value.
+- Exporting the clean, structured datasets to be used in the next phase.
 
-# Python Analysis
+**Python Analysis and Data Exploration:**
 
-Using Python, I imported, merged, and cleaned the data using pandas and performed exploratory data analysis (EDA) with matplotlib and seaborn. Key steps and visualizations included:
+- The normalized datasets were directly imported into Python from the SQL local server. The data was merged, cleaned, and prepared for exploratory data analysis (EDA) using Python’s libraries such as pandas, matplotlib, and seaborn.
 
-**_Data Merging and Cleaning:_**
+_Key tasks included:_
 
-Merged all the datasets (financial, customer, merchant, location, and card data) to create a consolidated DataFrame.
-Dropped irrelevant columns and handled missing values.
+- Handling missing values and irrelevant columns to ensure clean datasets.
+- Conducting detailed EDA, including visualizations such as histograms, bar charts, and heatmaps, to uncover relationships between variables like transaction frequency, CLV, and fraudulent behavior.
+- Analyzing correlations between key variables to establish patterns of fraudulent activity.
 
-**_Exploratory Data Analysis (EDA):_**
+**Power BI Dashboard for Reporting:**
 
-- _Fraudulent vs Non-Fraudulent Transactions:_ A bar chart comparing the count of fraudulent and non-fraudulent transactions provided a clear view of the distribution.
-
-- _Distribution of Transaction Amounts:_ Visualized using a histogram, this provided insights into the spread of transaction values, highlighting the occurrence of high-value transactions.
-
-- _Fraudulent Transactions by Card Type:_ A count plot showed how different card types are linked to fraudulent transactions, revealing vulnerabilities related to specific card types.
-
-- _Customer Lifetime Value (CLV) Distribution:_ A histogram of CLV values helped analyze customer loyalty and spending power.
-
-- _Correlation Heatmap:_ Showed the correlations between key variables like amount, CLV, transaction frequency, and fraudulent transactions to identify potential relationships.
-
-- _Fraudulent Transactions by Purchase Category:_ A pie chart depicted the percentage of fraudulent transactions across different purchase categories, highlighting sectors more prone to fraud.
-
-- _Top 10 Cities by Transaction Count:_ A bar chart displaying the cities with the highest number of transactions, helping focus on regions with high transaction volumes.
-
-- _Transaction Frequency by Fraudulent Transactions:_ A box plot to compare transaction frequencies between fraudulent and non-fraudulent transactions, helping understand buying behavior linked to fraud.
-
-# Power BI Analysis and Insights
-
-The third phase involved using Power BI to create interactive and dynamic dashboards for advanced analysis and reporting. Key visualizations and insights are:
-
-**1. Customers by Transaction Frequency Category:**
-
-A bar chart visualized the distribution of customers across different transaction frequency categories, providing insight into their purchasing patterns. This helps to tailor marketing strategies based on transaction frequency.
-
-**2. Fraudulent Transactions by Country:**
-
-A bar chart compared fraudulent transactions by country. It was found that Germany had the highest number of fraudulent transactions, focusing prevention efforts in specific regions.
-
-**3. Fraudulent Transactions by Age Category:**
-
-A pie chart illustrated the distribution of fraudulent transactions by age group. Younger customers were identified as the group with the highest number of fraudulent activities, followed by middle-aged customers.
-
-**4. Fraud Amount by Transaction Frequency Category:**
-
-A bar chart visualizing the total fraudulent amount for each transaction frequency category revealed that customers with high transaction frequencies had the highest fraudulent transaction amounts, marking them as a high-risk group.
-
-**Interactive Filters:**
-
-Users can filter by city, card type, and purchase category to dynamically explore the dashboard, providing flexibility in uncovering specific insights across different segments.
-
-# Key Insights:
-
-- Fraudulent Activity by Age: Younger and middle-aged customers are more prone to fraudulent activities.
-- Geographical Fraud Distribution: Germany had the highest number of fraudulent transactions among the countries analyzed.
-- High-Risk Customers: Customers with high transaction frequency not only spend more but are also at higher risk of conducting fraudulent transactions.
-- Purchase Category Fraud: Certain purchase categories, such as "Shopping" and "Retail", were found to have more frequent fraudulent transactions.
+- After data exploration, insights were transformed into an interactive dashboard using Power BI for comprehensive reporting. Power BI allowed for dynamic filtering and visualization, enabling users to explore fraud trends across regions, age groups, and transaction categories.
+- The dashboard included:
+- Visuals such as bar charts, pie charts, and interactive maps to display the distribution of fraudulent transactions.
+- Filters based on city, card type, and merchant category to allow users to tailor their analysis dynamically.
+- A focus on highlighting high-risk customers, regions, and age groups prone to fraudulent activities.
 
 # Conclusion
 
-This capstone project demonstrates the comprehensive approach taken to analyze transaction fraud across multiple dimensions. SQL was used to extract and pre-analyze the data, Python facilitated deeper exploratory analysis, and Power BI provided powerful interactive dashboards. The findings will help organizations focus on specific regions, demographics, and business segments for better fraud prevention strategies.
+This project demonstrates the effective use of SQL, Python, and Power BI in analyzing transaction fraud. The structured methodology allowed for a comprehensive understanding of fraudulent patterns, providing a basis for identifying high-risk customer segments and regions. This approach can be leveraged for enhanced fraud detection and prevention across various financial institutions.
